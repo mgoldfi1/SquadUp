@@ -75,14 +75,94 @@
                     <view key="view" contentMode="scaleToFill" id="LbB-1L-2EV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Afr-Ik-RQK">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6kn-c8-YgI">
+                                        <rect key="frame" x="165.5" y="100" width="83" height="44.5"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="34"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="9j8-Ky-Qnf">
+                                        <rect key="frame" x="107" y="294.5" width="200" height="224"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="erj-ul-0iX">
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="22.5"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MOy-rG-5pX">
+                                                <rect key="frame" x="0.0" y="55.5" width="200" height="40"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="7Ph-wb-oBG"/>
+                                                    <constraint firstAttribute="height" constant="40" id="zUB-aJ-nGJ"/>
+                                                </constraints>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R7Y-sL-03o">
+                                                <rect key="frame" x="0.0" y="128.5" width="200" height="22.5"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mBq-vb-Lr8">
+                                                <rect key="frame" x="0.0" y="184" width="200" height="40"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="MVw-f1-1WB"/>
+                                                    <constraint firstAttribute="height" constant="40" id="q4M-e8-XDa"/>
+                                                </constraints>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dB7-qf-i3h">
+                                        <rect key="frame" x="134" y="592" width="146" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                        <state key="normal" title="Log in"/>
+                                        <connections>
+                                            <action selector="loginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9k1-aN-o5G"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <constraints>
+                                    <constraint firstItem="6kn-c8-YgI" firstAttribute="centerX" secondItem="Afr-Ik-RQK" secondAttribute="centerX" id="9WX-Sk-mhn"/>
+                                    <constraint firstItem="9j8-Ky-Qnf" firstAttribute="top" secondItem="6kn-c8-YgI" secondAttribute="bottom" constant="150" id="CfJ-4h-1rs"/>
+                                    <constraint firstItem="6kn-c8-YgI" firstAttribute="top" secondItem="Afr-Ik-RQK" secondAttribute="top" constant="100" id="pjn-nI-O9i"/>
+                                    <constraint firstItem="9j8-Ky-Qnf" firstAttribute="centerX" secondItem="Afr-Ik-RQK" secondAttribute="centerX" id="rzk-xK-B5K"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vgv-Sw-vRI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Afr-Ik-RQK" firstAttribute="leading" secondItem="vgv-Sw-vRI" secondAttribute="leading" id="NSG-d5-Lvd"/>
+                            <constraint firstItem="Afr-Ik-RQK" firstAttribute="top" secondItem="LbB-1L-2EV" secondAttribute="top" id="cyx-xn-NuJ"/>
+                            <constraint firstItem="Afr-Ik-RQK" firstAttribute="trailing" secondItem="vgv-Sw-vRI" secondAttribute="trailing" id="gYF-24-OHN"/>
+                            <constraint firstAttribute="bottom" secondItem="Afr-Ik-RQK" secondAttribute="bottom" id="onH-Zw-Rmn"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="IXX-6I-FxI"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="MOy-rG-5pX" id="Ozf-yI-nbq"/>
+                        <outlet property="logInButton" destination="dB7-qf-i3h" id="NsO-Zk-IIX"/>
+                        <outlet property="passwordTextField" destination="mBq-vb-Lr8" id="68g-cf-CQy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="psR-rI-fZP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1070" y="-327"/>
+            <point key="canvasLocation" x="1069.5652173913045" y="-327.45535714285711"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ZRo-m7-A75">
@@ -105,6 +185,9 @@
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

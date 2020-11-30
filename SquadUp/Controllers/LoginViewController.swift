@@ -9,21 +9,23 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var logInButton: UIButton!
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.setNavigationBarHidden(false, animated: true)
-
+        navigationController?.navigationBar.barTintColor = .link
+        navigationController?.navigationBar.isTranslucent = false
+        navigationController?.navigationBar.tintColor = .white
+        logInButton.layer.cornerRadius = logInButton.frame.size.height/2
+        emailTextField.layer.cornerRadius = emailTextField.frame.size.height/2
+        emailTextField.clipsToBounds = true
+        passwordTextField.layer.cornerRadius = passwordTextField.frame.size.height/2
+        passwordTextField.clipsToBounds = true
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
 
 }
