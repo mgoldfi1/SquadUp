@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B3122844B31ABCA7ADF8A00 /* Pods_SquadUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8C97E6191F0F9AA8B79CA1E /* Pods_SquadUp.framework */; };
+		95116702823C26B8D7255838 /* Pods_SquadUp_SquadUpUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F03B9538ACC435BF8797A52F /* Pods_SquadUp_SquadUpUITests.framework */; };
 		C97A65522574A6A700A17151 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97A65512574A6A700A17151 /* AppDelegate.swift */; };
 		C97A65542574A6A700A17151 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97A65532574A6A700A17151 /* SceneDelegate.swift */; };
 		C97A65562574A6A700A17151 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97A65552574A6A700A17151 /* ViewController.swift */; };
@@ -15,6 +17,7 @@
 		C97A655E2574A6AA00A17151 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C97A655C2574A6AA00A17151 /* LaunchScreen.storyboard */; };
 		C97A65692574A6AB00A17151 /* SquadUpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97A65682574A6AB00A17151 /* SquadUpTests.swift */; };
 		C97A65742574A6AB00A17151 /* SquadUpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97A65732574A6AB00A17151 /* SquadUpUITests.swift */; };
+		DD111372AB19C767A5ABAFC7 /* Pods_SquadUpTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D5C2E73AFF5F052688D8FCF /* Pods_SquadUpTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E8CE786F830B27DBD9B7960 /* Pods-SquadUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquadUp.debug.xcconfig"; path = "Target Support Files/Pods-SquadUp/Pods-SquadUp.debug.xcconfig"; sourceTree = "<group>"; };
+		4D14A8A2AB39F165B68EFC82 /* Pods-SquadUp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquadUp.release.xcconfig"; path = "Target Support Files/Pods-SquadUp/Pods-SquadUp.release.xcconfig"; sourceTree = "<group>"; };
+		59978970457FB76C504EB10E /* Pods-SquadUpTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquadUpTests.debug.xcconfig"; path = "Target Support Files/Pods-SquadUpTests/Pods-SquadUpTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7D5C2E73AFF5F052688D8FCF /* Pods_SquadUpTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SquadUpTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8C97E6191F0F9AA8B79CA1E /* Pods_SquadUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SquadUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C97A654E2574A6A700A17151 /* SquadUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SquadUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C97A65512574A6A700A17151 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C97A65532574A6A700A17151 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +57,10 @@
 		C97A656F2574A6AB00A17151 /* SquadUpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SquadUpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C97A65732574A6AB00A17151 /* SquadUpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquadUpUITests.swift; sourceTree = "<group>"; };
 		C97A65752574A6AB00A17151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD320B2F17455454FE7E6EDA /* Pods-SquadUp-SquadUpUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquadUp-SquadUpUITests.debug.xcconfig"; path = "Target Support Files/Pods-SquadUp-SquadUpUITests/Pods-SquadUp-SquadUpUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DCB37202E94F2EC7F4547F18 /* Pods-SquadUp-SquadUpUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquadUp-SquadUpUITests.release.xcconfig"; path = "Target Support Files/Pods-SquadUp-SquadUpUITests/Pods-SquadUp-SquadUpUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EB16072DEA8DFFA67038A8B6 /* Pods-SquadUpTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquadUpTests.release.xcconfig"; path = "Target Support Files/Pods-SquadUpTests/Pods-SquadUpTests.release.xcconfig"; sourceTree = "<group>"; };
+		F03B9538ACC435BF8797A52F /* Pods_SquadUp_SquadUpUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SquadUp_SquadUpUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B3122844B31ABCA7ADF8A00 /* Pods_SquadUp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD111372AB19C767A5ABAFC7 /* Pods_SquadUpTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95116702823C26B8D7255838 /* Pods_SquadUp_SquadUpUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10504632A2119DA3BEA54516 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E8CE786F830B27DBD9B7960 /* Pods-SquadUp.debug.xcconfig */,
+				4D14A8A2AB39F165B68EFC82 /* Pods-SquadUp.release.xcconfig */,
+				CD320B2F17455454FE7E6EDA /* Pods-SquadUp-SquadUpUITests.debug.xcconfig */,
+				DCB37202E94F2EC7F4547F18 /* Pods-SquadUp-SquadUpUITests.release.xcconfig */,
+				59978970457FB76C504EB10E /* Pods-SquadUpTests.debug.xcconfig */,
+				EB16072DEA8DFFA67038A8B6 /* Pods-SquadUpTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		51B984CEC09D602415638AE8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B8C97E6191F0F9AA8B79CA1E /* Pods_SquadUp.framework */,
+				F03B9538ACC435BF8797A52F /* Pods_SquadUp_SquadUpUITests.framework */,
+				7D5C2E73AFF5F052688D8FCF /* Pods_SquadUpTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C97A65452574A6A700A17151 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +122,8 @@
 				C97A65672574A6AB00A17151 /* SquadUpTests */,
 				C97A65722574A6AB00A17151 /* SquadUpUITests */,
 				C97A654F2574A6A700A17151 /* Products */,
+				10504632A2119DA3BEA54516 /* Pods */,
+				51B984CEC09D602415638AE8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,9 +176,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C97A65782574A6AB00A17151 /* Build configuration list for PBXNativeTarget "SquadUp" */;
 			buildPhases = (
+				75B7FA69109322A5CAB963AC /* [CP] Check Pods Manifest.lock */,
 				C97A654A2574A6A700A17151 /* Sources */,
 				C97A654B2574A6A700A17151 /* Frameworks */,
 				C97A654C2574A6A700A17151 /* Resources */,
+				141309BD57D8BD6FA3AC6936 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +195,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C97A657B2574A6AB00A17151 /* Build configuration list for PBXNativeTarget "SquadUpTests" */;
 			buildPhases = (
+				8C58573F433C2C9063B12A40 /* [CP] Check Pods Manifest.lock */,
 				C97A65602574A6AB00A17151 /* Sources */,
 				C97A65612574A6AB00A17151 /* Frameworks */,
 				C97A65622574A6AB00A17151 /* Resources */,
@@ -170,9 +214,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C97A657E2574A6AB00A17151 /* Build configuration list for PBXNativeTarget "SquadUpUITests" */;
 			buildPhases = (
+				207AEB5BD6FCA05E212F5317 /* [CP] Check Pods Manifest.lock */,
 				C97A656B2574A6AB00A17151 /* Sources */,
 				C97A656C2574A6AB00A17151 /* Frameworks */,
 				C97A656D2574A6AB00A17151 /* Resources */,
+				2401CD7F5CB911B75242BF90 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,6 +298,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		141309BD57D8BD6FA3AC6936 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SquadUp/Pods-SquadUp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SquadUp/Pods-SquadUp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SquadUp/Pods-SquadUp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		207AEB5BD6FCA05E212F5317 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SquadUp-SquadUpUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2401CD7F5CB911B75242BF90 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SquadUp-SquadUpUITests/Pods-SquadUp-SquadUpUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SquadUp-SquadUpUITests/Pods-SquadUp-SquadUpUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SquadUp-SquadUpUITests/Pods-SquadUp-SquadUpUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75B7FA69109322A5CAB963AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SquadUp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C58573F433C2C9063B12A40 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SquadUpTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C97A654A2574A6A700A17151 /* Sources */ = {
@@ -433,6 +582,7 @@
 		};
 		C97A65792574A6AB00A17151 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E8CE786F830B27DBD9B7960 /* Pods-SquadUp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +602,7 @@
 		};
 		C97A657A2574A6AB00A17151 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D14A8A2AB39F165B68EFC82 /* Pods-SquadUp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,6 +622,7 @@
 		};
 		C97A657C2574A6AB00A17151 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59978970457FB76C504EB10E /* Pods-SquadUpTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +645,7 @@
 		};
 		C97A657D2574A6AB00A17151 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB16072DEA8DFFA67038A8B6 /* Pods-SquadUpTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +668,7 @@
 		};
 		C97A657F2574A6AB00A17151 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD320B2F17455454FE7E6EDA /* Pods-SquadUp-SquadUpUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +689,7 @@
 		};
 		C97A65802574A6AB00A17151 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCB37202E94F2EC7F4547F18 /* Pods-SquadUp-SquadUpUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
