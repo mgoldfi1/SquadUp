@@ -31,5 +31,8 @@ class WelcomeViewController: UIViewController {
         self.performSegue(withIdentifier: "goToLogin", sender: self)
     }
     
+    @IBAction func registerButtonPressed(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "goToRegister", sender: self)
+    }
 }
 

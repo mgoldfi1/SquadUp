@@ -34,17 +34,42 @@ struct NetworkingClient {
         
        AF.request("\(baseRestURL)/auth/login", method: .post, parameters: parameters, encoder: JSONParameterEncoder.default, headers: headers).responseDecodable(of: LoginSession.self) { response in
                 if let auth = response.value {
-                print(response.data)
                 if let token = auth.token {
                     self.delegate?.didSuccessfullyLogin(session: auth)
                 } else if let message = auth.message {
-                    self.delegate?.loginFailed(session: auth)
+                     self.delegate?.loginFailed(session: auth)
                 }
             } else {
                 let sessionError = LoginSession(token: nil, status: "Error", message: "Something went wrong")
                 self.delegate?.loginFailed(session: sessionError)
             }
         }
+        
+    }
+    
+    
+    func register(email: String, password: String) {
+        let headers: HTTPHeaders = [
+            "Accept": "application/json"
+        ]
+        
+        let parameters: [String: String] = [
+            "email": email,
+            "password": password
+        ]
+        
+        AF.request("\(baseRestURL)/auth/register", method: .post, parameters: parameters, encoder: JSONParameterEncoder.default, headers: headers).responseDecodable(of: LoginSession.self) { response in
+                 if let auth = response.value {
+                 if let token = auth.token {
+                     self.delegate?.didSuccessfullyLogin(session: auth)
+                 } else if let message = auth.message {
+                      self.delegate?.loginFailed(session: auth)
+                 }
+             } else {
+                 let sessionError = LoginSession(token: nil, status: "Error", message: "Something went wrong")
+                 self.delegate?.loginFailed(session: sessionError)
+             }
+         }
         
     }
 }
