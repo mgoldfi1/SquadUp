@@ -132,13 +132,22 @@
                                         <state key="normal" title="Log in"/>
                                         <connections>
                                             <action selector="loginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9k1-aN-o5G"/>
+                                            <action selector="loginButtonPressed:" destination="dFD-Qx-0Ah" eventType="touchUpInside" id="ULb-v7-Hn5"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xvQ-gy-Hbe">
+                                        <rect key="frame" x="207" y="746" width="0.0" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="linkColor"/>
                                 <constraints>
+                                    <constraint firstItem="xvQ-gy-Hbe" firstAttribute="centerX" secondItem="Afr-Ik-RQK" secondAttribute="centerX" id="1am-ja-nUl"/>
                                     <constraint firstItem="6kn-c8-YgI" firstAttribute="centerX" secondItem="Afr-Ik-RQK" secondAttribute="centerX" id="9WX-Sk-mhn"/>
                                     <constraint firstItem="9j8-Ky-Qnf" firstAttribute="top" secondItem="6kn-c8-YgI" secondAttribute="bottom" constant="150" id="CfJ-4h-1rs"/>
+                                    <constraint firstAttribute="bottom" secondItem="xvQ-gy-Hbe" secondAttribute="bottom" constant="150" id="R24-3o-TQ0"/>
                                     <constraint firstItem="6kn-c8-YgI" firstAttribute="top" secondItem="Afr-Ik-RQK" secondAttribute="top" constant="100" id="pjn-nI-O9i"/>
                                     <constraint firstItem="9j8-Ky-Qnf" firstAttribute="centerX" secondItem="Afr-Ik-RQK" secondAttribute="centerX" id="rzk-xK-B5K"/>
                                 </constraints>
@@ -156,8 +165,10 @@
                     <navigationItem key="navigationItem" id="IXX-6I-FxI"/>
                     <connections>
                         <outlet property="emailTextField" destination="MOy-rG-5pX" id="Ozf-yI-nbq"/>
+                        <outlet property="errorMessage" destination="xvQ-gy-Hbe" id="Tf2-ID-edv"/>
                         <outlet property="logInButton" destination="dB7-qf-i3h" id="NsO-Zk-IIX"/>
                         <outlet property="passwordTextField" destination="mBq-vb-Lr8" id="68g-cf-CQy"/>
+                        <segue destination="xA9-3b-gB3" kind="show" identifier="goToHome" id="Na2-sj-KWj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="psR-rI-fZP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -179,6 +190,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Af9-Iv-Mqy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-819" y="93"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="JvV-ma-a71">
+            <objects>
+                <viewController id="xA9-3b-gB3" customClass="HomeViewController" customModule="SquadUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EpF-uf-aVZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="BIv-fg-X1g"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2o9-M9-jpR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gkK-mv-TJI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2580" y="92"/>
         </scene>
     </scenes>
     <resources>
