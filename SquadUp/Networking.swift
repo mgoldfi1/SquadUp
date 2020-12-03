@@ -8,7 +8,7 @@
 import Foundation
 import Alamofire
 
-
+let defaults = UserDefaults.standard
 
 protocol  NetworkingClientDelegate {
     func didSuccessfullyLogin(session: LoginSession)
@@ -35,6 +35,7 @@ struct NetworkingClient {
        AF.request("\(baseRestURL)/auth/login", method: .post, parameters: parameters, encoder: JSONParameterEncoder.default, headers: headers).responseDecodable(of: LoginSession.self) { response in
                 if let auth = response.value {
                 if let token = auth.token {
+                    defaults.setValue(token, forKey: "accessToken")
                     self.delegate?.didSuccessfullyLogin(session: auth)
                 } else if let message = auth.message {
                      self.delegate?.loginFailed(session: auth)
@@ -61,6 +62,7 @@ struct NetworkingClient {
         AF.request("\(baseRestURL)/auth/register", method: .post, parameters: parameters, encoder: JSONParameterEncoder.default, headers: headers).responseDecodable(of: LoginSession.self) { response in
                  if let auth = response.value {
                  if let token = auth.token {
+                     defaults.setValue(token, forKey: "accessToken")
                      self.delegate?.didSuccessfullyLogin(session: auth)
                  } else if let message = auth.message {
                       self.delegate?.loginFailed(session: auth)
@@ -71,5 +73,31 @@ struct NetworkingClient {
              }
          }
         
+    }
+}
+
+
+extension NetworkingClient {
+    func fetchGames(action: @escaping ([GameResponse.Game]?, Bool? ) -> Void) {
+        let token = defaults.string(forKey: "accessToken")
+
+        let headers: HTTPHeaders = [
+            "Accept": "application/json",
+            "Authorization": "Bearer \(token!)"
+        ]
+        
+        AF.request("\(baseRestURL)/games/all",method: .get, headers: headers).responseDecodable(of: GameResponse.self) { response in
+            guard let data = response.value else {
+                print("error")
+                return
+            }
+            
+            if data.status == "OK" {
+                action(data.games, nil)
+            } else {
+                action(nil, true)
+            }
+            
+        }
     }
 }

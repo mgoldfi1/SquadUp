@@ -22,6 +22,7 @@
 		C9D752AD2575954F00630743 /* LoginSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D752AC2575954F00630743 /* LoginSession.swift */; };
 		C9D752B32575DEF500630743 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D752B22575DEF400630743 /* HomeViewController.swift */; };
 		C9D752B82576B3FF00630743 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D752B72576B3FF00630743 /* RegisterViewController.swift */; };
+		C9D752BD2578B69400630743 /* GameResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D752BC2578B69300630743 /* GameResponse.swift */; };
 		DD111372AB19C767A5ABAFC7 /* Pods_SquadUpTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D5C2E73AFF5F052688D8FCF /* Pods_SquadUpTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,7 @@
 		C9D752AC2575954F00630743 /* LoginSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSession.swift; sourceTree = "<group>"; };
 		C9D752B22575DEF400630743 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C9D752B72576B3FF00630743 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		C9D752BC2578B69300630743 /* GameResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameResponse.swift; sourceTree = "<group>"; };
 		CD320B2F17455454FE7E6EDA /* Pods-SquadUp-SquadUpUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquadUp-SquadUpUITests.debug.xcconfig"; path = "Target Support Files/Pods-SquadUp-SquadUpUITests/Pods-SquadUp-SquadUpUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DCB37202E94F2EC7F4547F18 /* Pods-SquadUp-SquadUpUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquadUp-SquadUpUITests.release.xcconfig"; path = "Target Support Files/Pods-SquadUp-SquadUpUITests/Pods-SquadUp-SquadUpUITests.release.xcconfig"; sourceTree = "<group>"; };
 		EB16072DEA8DFFA67038A8B6 /* Pods-SquadUpTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquadUpTests.release.xcconfig"; path = "Target Support Files/Pods-SquadUpTests/Pods-SquadUpTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				C9D752AC2575954F00630743 /* LoginSession.swift */,
+				C9D752BC2578B69300630743 /* GameResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -445,6 +448,7 @@
 				C9D752AD2575954F00630743 /* LoginSession.swift in Sources */,
 				C9D752B32575DEF500630743 /* HomeViewController.swift in Sources */,
 				C97A65542574A6A700A17151 /* SceneDelegate.swift in Sources */,
+				C9D752BD2578B69400630743 /* GameResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
