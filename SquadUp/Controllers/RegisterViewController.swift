@@ -20,7 +20,7 @@ class RegisterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.setNavigationBarHidden(false, animated: true)
-        navigationController?.navigationBar.barTintColor = .link
+        navigationController?.navigationBar.barTintColor = .systemPurple
         navigationController?.navigationBar.isTranslucent = false
         navigationController?.navigationBar.tintColor = .white
         createButton.layer.cornerRadius = createButton.frame.size.height/2

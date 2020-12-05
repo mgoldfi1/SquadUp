@@ -21,7 +21,7 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         
         navigationController?.setNavigationBarHidden(false, animated: true)
-        navigationController?.navigationBar.barTintColor = .link
+        navigationController?.navigationBar.barTintColor = .systemPurple
         navigationController?.navigationBar.isTranslucent = false
         navigationController?.navigationBar.tintColor = .white
         
@@ -36,7 +36,7 @@ class LoginViewController: UIViewController {
         passwordTextField.text = "bombaclot"
         
         networkingClient.delegate = self
-    }
+     }
     
     @IBAction func loginButtonPressed(_ sender: UIButton) {
         
