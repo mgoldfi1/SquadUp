@@ -301,7 +301,88 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4DG-Ov-RxG">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFb-VF-lBa">
+                                        <rect key="frame" x="0.0" y="8" width="414" height="51"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="51" id="JLW-aq-w9M"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HHR-Wa-ZW9">
+                                        <rect key="frame" x="0.0" y="67" width="414" height="67.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="LU7-ml-01q">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="67.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No. of players:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tN9-Di-xj2">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="22.5"/>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total listings:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KIV-Gw-6HQ">
+                                                        <rect key="frame" x="0.0" y="22.5" width="414" height="22.5"/>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open listings:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UiC-Cz-TQk">
+                                                        <rect key="frame" x="0.0" y="45" width="414" height="22.5"/>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                        <constraints>
+                                            <constraint firstItem="LU7-ml-01q" firstAttribute="leading" secondItem="HHR-Wa-ZW9" secondAttribute="leading" constant="8" id="55x-Ut-2Nx"/>
+                                            <constraint firstAttribute="bottom" secondItem="LU7-ml-01q" secondAttribute="bottom" id="Sc5-oI-mlv"/>
+                                            <constraint firstItem="LU7-ml-01q" firstAttribute="top" secondItem="HHR-Wa-ZW9" secondAttribute="top" id="TCS-6l-W9Y"/>
+                                            <constraint firstItem="LU7-ml-01q" firstAttribute="centerY" secondItem="HHR-Wa-ZW9" secondAttribute="centerY" id="Taa-wS-obg"/>
+                                            <constraint firstAttribute="trailing" secondItem="LU7-ml-01q" secondAttribute="trailing" id="ba5-3u-fL8"/>
+                                            <constraint firstItem="LU7-ml-01q" firstAttribute="leading" secondItem="HHR-Wa-ZW9" secondAttribute="leading" id="orz-64-zFy"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nS8-34-cbO">
+                                        <rect key="frame" x="46" y="146" width="150" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="c0F-gC-mmS"/>
+                                            <constraint firstAttribute="width" constant="150" id="ubo-Yj-bWf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                        <state key="normal" title="Create a listing">
+                                            <color key="titleColor" systemColor="systemPurpleColor"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ptp-nH-DQY">
+                                        <rect key="frame" x="230" y="146" width="150" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="Zx0-2g-DCK"/>
+                                            <constraint firstAttribute="height" constant="30" id="sUm-wV-zvR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                                        <state key="normal" title="Add to favorites">
+                                            <color key="titleColor" systemColor="systemPurpleColor"/>
+                                        </state>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                <constraints>
+                                    <constraint firstItem="HHR-Wa-ZW9" firstAttribute="top" secondItem="xFb-VF-lBa" secondAttribute="bottom" constant="8" symbolic="YES" id="58U-Qv-8NT"/>
+                                    <constraint firstItem="HHR-Wa-ZW9" firstAttribute="leading" secondItem="4DG-Ov-RxG" secondAttribute="leading" id="FNS-39-qad"/>
+                                    <constraint firstAttribute="trailing" secondItem="xFb-VF-lBa" secondAttribute="trailing" id="GL4-mr-fKs"/>
+                                    <constraint firstItem="xFb-VF-lBa" firstAttribute="top" secondItem="4DG-Ov-RxG" secondAttribute="top" constant="8" id="SKv-xZ-2RU"/>
+                                    <constraint firstItem="xFb-VF-lBa" firstAttribute="leading" secondItem="4DG-Ov-RxG" secondAttribute="leading" id="Zug-6J-yXI"/>
+                                    <constraint firstItem="HHR-Wa-ZW9" firstAttribute="top" secondItem="xFb-VF-lBa" secondAttribute="bottom" constant="8" id="b0O-Gg-9D5"/>
+                                    <constraint firstAttribute="trailing" secondItem="HHR-Wa-ZW9" secondAttribute="trailing" id="nMP-Be-uRM"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qZr-oz-NOC"/>
@@ -314,6 +395,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ecf-Hf-9bS"/>
+                    <connections>
+                        <outlet property="createListingButton" destination="nS8-34-cbO" id="1pQ-V5-1eU"/>
+                        <outlet property="favoriteButton" destination="ptp-nH-DQY" id="pJQ-6H-3qp"/>
+                        <outlet property="gameName" destination="xFb-VF-lBa" id="Rx0-dD-Ht8"/>
+                        <outlet property="listingCountTotal" destination="KIV-Gw-6HQ" id="RiH-QW-RSa"/>
+                        <outlet property="openListingsCount" destination="UiC-Cz-TQk" id="6iS-u3-plz"/>
+                        <outlet property="playerCount" destination="tN9-Di-xj2" id="bCu-Wc-x1x"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cf0-2u-EuH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -441,7 +530,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="c5U-3s-rqQ"/>
+        <segue reference="Na2-sj-KWj"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="linkColor">

@@ -11,6 +11,7 @@
 		95116702823C26B8D7255838 /* Pods_SquadUp_SquadUpUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F03B9538ACC435BF8797A52F /* Pods_SquadUp_SquadUpUITests.framework */; };
 		C93AE5272579D034005A8667 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93AE5262579D034005A8667 /* MyCollectionViewCell.swift */; };
 		C93AE52C257B4D21005A8667 /* GameDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93AE52B257B4D21005A8667 /* GameDetailsViewController.swift */; };
+		C93AE531257EC1DC005A8667 /* ListingResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93AE530257EC1DC005A8667 /* ListingResponse.swift */; };
 		C97A65522574A6A700A17151 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97A65512574A6A700A17151 /* AppDelegate.swift */; };
 		C97A65542574A6A700A17151 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97A65532574A6A700A17151 /* SceneDelegate.swift */; };
 		C97A65562574A6A700A17151 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97A65552574A6A700A17151 /* WelcomeViewController.swift */; };
@@ -53,6 +54,7 @@
 		B8C97E6191F0F9AA8B79CA1E /* Pods_SquadUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SquadUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C93AE5262579D034005A8667 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 		C93AE52B257B4D21005A8667 /* GameDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailsViewController.swift; sourceTree = "<group>"; };
+		C93AE530257EC1DC005A8667 /* ListingResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingResponse.swift; sourceTree = "<group>"; };
 		C97A654E2574A6A700A17151 /* SquadUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SquadUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C97A65512574A6A700A17151 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C97A65532574A6A700A17151 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 			children = (
 				C9D752AC2575954F00630743 /* LoginSession.swift */,
 				C9D752BC2578B69300630743 /* GameResponse.swift */,
+				C93AE530257EC1DC005A8667 /* ListingResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -447,6 +450,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9D752A22574B37C00630743 /* LoginViewController.swift in Sources */,
+				C93AE531257EC1DC005A8667 /* ListingResponse.swift in Sources */,
 				C9D752A7257585F700630743 /* Networking.swift in Sources */,
 				C97A65562574A6A700A17151 /* WelcomeViewController.swift in Sources */,
 				C9D752B82576B3FF00630743 /* RegisterViewController.swift in Sources */,

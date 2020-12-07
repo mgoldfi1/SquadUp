@@ -29,11 +29,11 @@ class LoginViewController: UIViewController {
         
         emailTextField.layer.cornerRadius = emailTextField.frame.size.height/2
         emailTextField.clipsToBounds = true
-        emailTextField.text = "email@gma1sil.com"
+        emailTextField.text = "email@gmail.com"
         
         passwordTextField.layer.cornerRadius = passwordTextField.frame.size.height/2
         passwordTextField.clipsToBounds = true
-        passwordTextField.text = "bombaclot"
+        passwordTextField.text = "pass"
         
         networkingClient.delegate = self
      }
@@ -61,6 +61,7 @@ class LoginViewController: UIViewController {
 
 extension LoginViewController: NetworkingClientDelegate {
     func didSuccessfullyLogin(session: LoginSession) {
+        print(session)
         self.performSegue(withIdentifier: "goToHome", sender: self)
     }
     
