@@ -57,11 +57,19 @@ extension GameDetailsViewController: UITableViewDelegate, UITableViewDataSource 
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "listingCell", for: indexPath) as! GameListingTableCell
-        cell.listingTitle.text = sortedListings[indexPath.row].title
-        cell.listingSummary.text = sortedListings[indexPath.row].summary
-        cell.listingDate.text = sortedListings[indexPath.row].createdAt
-        cell.listingAuthor.text  = sortedListings[indexPath.row].author.email
-        cell.listingSeekingCount.text = String(sortedListings[indexPath.row].seekingCount)
+        cell.listingTitle.text = sortedListings[indexPath.row].title.uppercased();       cell.listingSummary.text = sortedListings[indexPath.row].summary
+        
+        cell.layer.cornerRadius = 8
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .short
+        var formattedDate = dateFormatter.date(from: sortedListings[indexPath.row].createdAt)
+            
+        
+        cell.listingDate.text = dateFormatter.string(from: formattedDate ?? Date())
+        cell.listingAuthor.text  = "Posted by: \(sortedListings[indexPath.row].author.email)"
+        cell.listingSeekingCount.text =
+            "Seeking: \(String(sortedListings[indexPath.row].seekingCount))"
         
         return cell
         }
