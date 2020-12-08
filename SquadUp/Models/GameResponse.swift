@@ -19,5 +19,12 @@ struct GameResponse: Codable {
         var image: String
         var name: String
         var updatedAt: String
+        var listingCount: ListingCount
+        var playerCount: Int
+        
+        struct ListingCount: Codable {
+            var open: Int
+            var closed: Int
+        }
     }
 }
