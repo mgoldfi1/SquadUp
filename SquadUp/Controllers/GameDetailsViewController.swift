@@ -9,11 +9,6 @@ import UIKit
 
 class GameDetailsViewController: UIViewController {
     
-//    @IBOutlet weak var playerCount: UILabel!
-//    @IBOutlet weak var listingCountTotal: UILabel!
-//    @IBOutlet weak var openListingsCount: UILabel!
-//    @IBOutlet weak var favoriteButton: UIButton!
-//    @IBOutlet weak var createListingButton: UIButton!
     @IBOutlet weak var gameName: UILabel!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var listingCountLabel: UILabel!
@@ -25,7 +20,7 @@ class GameDetailsViewController: UIViewController {
     
     
    
-    var selectedGame: GameResponse.Game?
+    var selectedGame: GameResponse.Game!
     var networkClient = NetworkingClient()
     var listings = [ListingResponse.Listing]()
     var sortedListings = [ListingResponse.Listing]()
@@ -39,9 +34,12 @@ class GameDetailsViewController: UIViewController {
                     if (response == "Added to favorites") {
                         self.favoriteButton.setTitle("Favorited", for: .normal)
                         self.favoriteButton.setImage(UIImage(systemName: "star.fill"), for: .normal)
+                        self.playerCountLabel.text = String("Players: \(self.selectedGame.playerCount + 1)")
                     } else if response == "Removed from favorites" {
                         self.favoriteButton.setTitle("Add to favorites", for: .normal)
                         self.favoriteButton.setImage(UIImage(systemName: "star"), for: .normal)
+                        self.playerCountLabel.text = String("Players: \(self.selectedGame.playerCount)")
+
                     }
                 }
             }
@@ -59,9 +57,9 @@ class GameDetailsViewController: UIViewController {
         
         favoriteButton.layer.cornerRadius = 12
         
-        let imageFileName = selectedGame?.image
+        let imageFileName = selectedGame.image
         
-        let urlString = "http://localhost:8080/images/games/\(imageFileName!)"
+        let urlString = "http://localhost:8080/images/games/\(imageFileName)"
 
         let url = URL(string: urlString)
         if let imageData: NSData = NSData(contentsOf: url!) {
@@ -69,15 +67,14 @@ class GameDetailsViewController: UIViewController {
         }
         
         
-        let playerCount = selectedGame?.playerCount
-        let totalListingCount = (selectedGame?.listingCount.closed)! + (selectedGame?.listingCount.open)!
+        let playerCount = selectedGame.playerCount
+        let totalListingCount = (selectedGame.listingCount.closed) + (selectedGame.listingCount.open)
         
-        gameName.text = selectedGame?.name
-        playerCountLabel.text = "Players: \(String(playerCount!))"
+        gameName.text = selectedGame.name
+        playerCountLabel.text = "Players: \(String(playerCount))"
         totalListingsLabel.text = "Total Listings: \(totalListingCount)"
-        guard let id = selectedGame?._id else {return}
         
-        networkClient.fetchListings(gameId: id) { response, error in
+        networkClient.fetchListings(gameId: selectedGame._id) { response, error in
             if let response = response {
                 DispatchQueue.main.async {
                     self.listings = response
