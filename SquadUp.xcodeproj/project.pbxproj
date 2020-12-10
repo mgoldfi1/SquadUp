@@ -13,6 +13,7 @@
 		C93AE52C257B4D21005A8667 /* GameDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93AE52B257B4D21005A8667 /* GameDetailsViewController.swift */; };
 		C93AE531257EC1DC005A8667 /* ListingResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93AE530257EC1DC005A8667 /* ListingResponse.swift */; };
 		C93AE537257FE53C005A8667 /* GameListingTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93AE536257FE53C005A8667 /* GameListingTableCell.swift */; };
+		C93AE5422581AE24005A8667 /* FavoriteResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93AE5412581AE24005A8667 /* FavoriteResponse.swift */; };
 		C97A65522574A6A700A17151 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97A65512574A6A700A17151 /* AppDelegate.swift */; };
 		C97A65542574A6A700A17151 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97A65532574A6A700A17151 /* SceneDelegate.swift */; };
 		C97A65562574A6A700A17151 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97A65552574A6A700A17151 /* WelcomeViewController.swift */; };
@@ -57,6 +58,7 @@
 		C93AE52B257B4D21005A8667 /* GameDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailsViewController.swift; sourceTree = "<group>"; };
 		C93AE530257EC1DC005A8667 /* ListingResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingResponse.swift; sourceTree = "<group>"; };
 		C93AE536257FE53C005A8667 /* GameListingTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListingTableCell.swift; sourceTree = "<group>"; };
+		C93AE5412581AE24005A8667 /* FavoriteResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteResponse.swift; sourceTree = "<group>"; };
 		C97A654E2574A6A700A17151 /* SquadUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SquadUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C97A65512574A6A700A17151 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C97A65532574A6A700A17151 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -218,6 +220,7 @@
 				C9D752AC2575954F00630743 /* LoginSession.swift */,
 				C9D752BC2578B69300630743 /* GameResponse.swift */,
 				C93AE530257EC1DC005A8667 /* ListingResponse.swift */,
+				C93AE5412581AE24005A8667 /* FavoriteResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -460,6 +463,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C93AE5422581AE24005A8667 /* FavoriteResponse.swift in Sources */,
 				C9D752A22574B37C00630743 /* LoginViewController.swift in Sources */,
 				C93AE531257EC1DC005A8667 /* ListingResponse.swift in Sources */,
 				C9D752A7257585F700630743 /* Networking.swift in Sources */,

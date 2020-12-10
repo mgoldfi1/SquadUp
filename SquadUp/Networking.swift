@@ -133,4 +133,35 @@ extension NetworkingClient {
             
         }
     }
+    
+    func favoriteRequest(gameId: String, action: @escaping (String?, Bool? ) -> Void) {
+        let token = defaults.string(forKey: "accessToken")
+
+        
+        let headers: HTTPHeaders = [
+            "Accept": "application/json",
+            "Authorization": "Bearer \(token!)"
+        ]
+        
+        let parameters: [String: String] = [
+            "_id": gameId
+        ]
+        
+        
+        AF.request("\(baseRestURL)/games/favoriteGame",method: .post, parameters: parameters, encoder: JSONParameterEncoder.default, headers: headers).responseDecodable(of: FavoriteResponse.self) { response in
+            
+            print(response)
+            guard let data = response.value else {
+                print("error in guard let")
+                return
+            }
+            
+            if data.status == "OK" {
+                action(data.message, nil)
+            } else {
+                action(nil, true)
+            }
+            
+        }
+    }
 }

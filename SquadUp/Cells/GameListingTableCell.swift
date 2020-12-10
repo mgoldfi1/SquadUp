@@ -14,5 +14,6 @@ class GameListingTableCell: UITableViewCell {
     @IBOutlet weak var listingSummary: UILabel!
     @IBOutlet weak var listingAuthor: UILabel!
     @IBOutlet weak var listingSeekingCount: UILabel!
-    
+    @IBOutlet weak var cellContainer: UIStackView!
+
 }
