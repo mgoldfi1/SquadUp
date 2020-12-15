@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6B3122844B31ABCA7ADF8A00 /* Pods_SquadUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8C97E6191F0F9AA8B79CA1E /* Pods_SquadUp.framework */; };
 		95116702823C26B8D7255838 /* Pods_SquadUp_SquadUpUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F03B9538ACC435BF8797A52F /* Pods_SquadUp_SquadUpUITests.framework */; };
+		C9277CF7258917BA00F6F84C /* CreateListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9277CF6258917BA00F6F84C /* CreateListingViewController.swift */; };
 		C93AE5272579D034005A8667 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93AE5262579D034005A8667 /* MyCollectionViewCell.swift */; };
 		C93AE52C257B4D21005A8667 /* GameDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93AE52B257B4D21005A8667 /* GameDetailsViewController.swift */; };
 		C93AE531257EC1DC005A8667 /* ListingResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93AE530257EC1DC005A8667 /* ListingResponse.swift */; };
@@ -54,6 +55,7 @@
 		59978970457FB76C504EB10E /* Pods-SquadUpTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquadUpTests.debug.xcconfig"; path = "Target Support Files/Pods-SquadUpTests/Pods-SquadUpTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7D5C2E73AFF5F052688D8FCF /* Pods_SquadUpTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SquadUpTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8C97E6191F0F9AA8B79CA1E /* Pods_SquadUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SquadUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9277CF6258917BA00F6F84C /* CreateListingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateListingViewController.swift; sourceTree = "<group>"; };
 		C93AE5262579D034005A8667 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 		C93AE52B257B4D21005A8667 /* GameDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailsViewController.swift; sourceTree = "<group>"; };
 		C93AE530257EC1DC005A8667 /* ListingResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingResponse.swift; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 				C9D752B22575DEF400630743 /* HomeViewController.swift */,
 				C9D752B72576B3FF00630743 /* RegisterViewController.swift */,
 				C93AE52B257B4D21005A8667 /* GameDetailsViewController.swift */,
+				C9277CF6258917BA00F6F84C /* CreateListingViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -469,6 +472,7 @@
 				C9D752A7257585F700630743 /* Networking.swift in Sources */,
 				C97A65562574A6A700A17151 /* WelcomeViewController.swift in Sources */,
 				C9D752B82576B3FF00630743 /* RegisterViewController.swift in Sources */,
+				C9277CF7258917BA00F6F84C /* CreateListingViewController.swift in Sources */,
 				C93AE537257FE53C005A8667 /* GameListingTableCell.swift in Sources */,
 				C97A65522574A6A700A17151 /* AppDelegate.swift in Sources */,
 				C9D752AD2575954F00630743 /* LoginSession.swift in Sources */,
@@ -582,7 +586,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -637,7 +641,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

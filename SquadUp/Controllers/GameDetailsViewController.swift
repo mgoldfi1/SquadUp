@@ -16,6 +16,7 @@ class GameDetailsViewController: UIViewController {
     @IBOutlet weak var totalListingsLabel: UILabel!
     @IBOutlet weak var favoriteButton: UIButton!
     @IBOutlet weak var background: UIImageView!
+    @IBOutlet weak var createListingButton: UIButton!
     
     
     
@@ -25,6 +26,9 @@ class GameDetailsViewController: UIViewController {
     var listings = [ListingResponse.Listing]()
     var sortedListings = [ListingResponse.Listing]()
     
+    @IBAction func createListingPressed(_ sender: UIButton) {
+        performSegue(withIdentifier: "goToListingForm", sender: self)
+    }
     
     
     @IBAction func favoritePressed(_ sender: UIButton) {
@@ -56,6 +60,10 @@ class GameDetailsViewController: UIViewController {
     
         
         favoriteButton.layer.cornerRadius = 12
+        favoriteButton.layer.borderWidth = 2
+        createListingButton.layer.borderWidth = 2
+        createListingButton.layer.cornerRadius = 12
+
         
         let imageFileName = selectedGame.image
         
@@ -63,7 +71,7 @@ class GameDetailsViewController: UIViewController {
 
         let url = URL(string: urlString)
         if let imageData: NSData = NSData(contentsOf: url!) {
-            background.image = UIImage(data: imageData as Data)
+//            background.image = UIImage(data: imageData as Data)
         }
         
         
@@ -100,6 +108,7 @@ extension GameDetailsViewController: UITableViewDelegate, UITableViewDataSource 
         let cell = tableView.dequeueReusableCell(withIdentifier: "listingCell", for: indexPath) as! GameListingTableCell
         
         cell.cellContainer.layer.cornerRadius = 8
+        cell.cellContainer.layer.borderWidth = 2
         cell.listingTitle.text = sortedListings[indexPath.row].title.uppercased();       cell.listingSummary.text = sortedListings[indexPath.row].summary
         
         cell.selectionStyle = .none

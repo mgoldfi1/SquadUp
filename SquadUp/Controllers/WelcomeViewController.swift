@@ -17,10 +17,11 @@ class WelcomeViewController: UIViewController {
         super.viewDidLoad()
         
         logInButton.layer.cornerRadius = 12
+        logInButton.layer.borderWidth = 2
         registerButton.layer.cornerRadius = 12
+        registerButton.layer.borderWidth = 2
         
         navigationController?.setNavigationBarHidden(true, animated: true)
-        // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {

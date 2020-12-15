@@ -20,23 +20,26 @@ class RegisterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.setNavigationBarHidden(false, animated: true)
-        navigationController?.navigationBar.barTintColor = .systemPurple
+        navigationController?.navigationBar.barTintColor = .white
         navigationController?.navigationBar.isTranslucent = false
-        navigationController?.navigationBar.tintColor = .white
+        navigationController?.navigationBar.tintColor = .black
         createButton.layer.cornerRadius = createButton.frame.size.height/2
+        createButton.layer.borderWidth = 2
         
         emailTextField.layer.cornerRadius = emailTextField.frame.size.height/2
         emailTextField.clipsToBounds = true
         emailTextField.text = "email@gma1sil.com"
+        emailTextField.layer.borderWidth = 2
         
         passwordTextField.layer.cornerRadius = passwordTextField.frame.size.height/2
         passwordTextField.clipsToBounds = true
         passwordTextField.text = "bombaclot"
+        passwordTextField.layer.borderWidth = 2
         
         confirmPasswordField.layer.cornerRadius = confirmPasswordField.frame.size.height/2
         confirmPasswordField.clipsToBounds = true
         confirmPasswordField.text = "bombaclot"
-        
+        confirmPasswordField.layer.borderWidth = 2
         networkingClient.delegate = self
 
     }

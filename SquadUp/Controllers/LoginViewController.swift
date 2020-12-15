@@ -27,13 +27,17 @@ class LoginViewController: UIViewController {
         
         logInButton.layer.cornerRadius = logInButton.frame.size.height/2
         
+        logInButton.layer.borderWidth = 2
+        
         emailTextField.layer.cornerRadius = emailTextField.frame.size.height/2
         emailTextField.clipsToBounds = true
         emailTextField.text = "email@gmail.com"
+        emailTextField.layer.borderWidth = 2
         
         passwordTextField.layer.cornerRadius = passwordTextField.frame.size.height/2
         passwordTextField.clipsToBounds = true
         passwordTextField.text = "pass"
+        passwordTextField.layer.borderWidth = 2
         
         networkingClient.delegate = self
      }

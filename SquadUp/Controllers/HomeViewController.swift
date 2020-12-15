@@ -28,15 +28,14 @@ class HomeViewController: UIViewController {
         collectionView.delegate = self
         searchBar.delegate = self
         searchBar.backgroundImage = UIImage()
+        searchBar.layer.borderWidth = 2
+        searchBar.layer.cornerRadius = 12
         if let textSearchField = searchBar.value(forKey: "searchField") as? UITextField {
                 textSearchField.borderStyle = .roundedRect
                 textSearchField.backgroundColor = .white
                 textSearchField.textColor = .black
-            
             }
         
-
-
         networkingClient.fetchGames { response, error in
            if let error = error {
               print("Error: \(error)")
@@ -52,9 +51,6 @@ class HomeViewController: UIViewController {
             }
         }
     }
-    
-
-   
 
 }
 
@@ -90,6 +86,7 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
                cell.gameImage.image = UIImage(data: imageData as Data)
             }
             cell.backgroundColor = .white
+            cell.layer.borderWidth = 2
             cell.layer.cornerRadius = 12
             return cell
         }
