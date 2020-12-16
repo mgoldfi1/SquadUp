@@ -23,8 +23,8 @@ class GameDetailsViewController: UIViewController {
    
     var selectedGame: GameResponse.Game!
     var networkClient = NetworkingClient()
-    var listings = [ListingResponse.Listing]()
-    var sortedListings = [ListingResponse.Listing]()
+    var listings = [Listing]()
+    var sortedListings = [Listing]()
     
     @IBAction func createListingPressed(_ sender: UIButton) {
         performSegue(withIdentifier: "goToListingForm", sender: self)
@@ -33,6 +33,7 @@ class GameDetailsViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destinationVC = segue.destination as! CreateListingViewController
         destinationVC.game = self.selectedGame
+        destinationVC.mainVC = self
     }
     
     @IBAction func favoritePressed(_ sender: UIButton) {
@@ -54,6 +55,7 @@ class GameDetailsViewController: UIViewController {
         }
       
     }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -69,18 +71,20 @@ class GameDetailsViewController: UIViewController {
         createListingButton.layer.cornerRadius = 12
 
         
-        let imageFileName = selectedGame.image
-        
-        let urlString = "http://localhost:8080/images/games/\(imageFileName)"
-
-        let url = URL(string: urlString)
-        if let imageData: NSData = NSData(contentsOf: url!) {
+//        let imageFileName = selectedGame.image
+//
+//        let urlString = "http://localhost:8080/images/games/\(imageFileName)"
+//
+//        let url = URL(string: urlString)
+//        if let imageData: NSData = NSData(contentsOf: url!) {
 //            background.image = UIImage(data: imageData as Data)
-        }
+//        }
         
         
         let playerCount = selectedGame.playerCount
         let totalListingCount = (selectedGame.listingCount.closed) + (selectedGame.listingCount.open)
+        
+        print(playerCount, totalListingCount)
         
         gameName.text = selectedGame.name
         playerCountLabel.text = "Players: \(String(playerCount))"
@@ -100,6 +104,18 @@ class GameDetailsViewController: UIViewController {
         }
 
         }
+    
+    func addCreatedListing(listing: Listing) {
+        
+        let totalListingCount = (selectedGame.listingCount.closed) + (selectedGame.listingCount.open) + 1
+        let openListingCount =  (selectedGame.listingCount.open) + 1
+
+        sortedListings.insert(listing, at: 0)
+        totalListingsLabel.text = "Total Listings: \(totalListingCount)"
+        listingCountLabel.text = "Open Listings: \(openListingCount)"
+        tableView.reloadData()
+    }
+    
     }
     
 

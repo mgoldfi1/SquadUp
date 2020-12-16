@@ -18,6 +18,7 @@ class CreateListingViewController: UIViewController {
     
     let networkingClient = NetworkingClient()
     var game: GameResponse.Game!
+    var mainVC: GameDetailsViewController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,16 +35,28 @@ class CreateListingViewController: UIViewController {
         
     }
     
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        print("hellothere")
+//        let destinationVC = segue.destination as! GameDetailsViewController
+//        print(destinationVC.listings)
+//    }
+    
     @IBAction func closeModal(_ sender: UIButton) {
         self.dismiss(animated: true)
     }
     
     @IBAction func submitListing(_ sender: UIButton) {
         
-        var formDict: [String : String] = ["title": titleField.text!, "summary": textBox.text!, "seekingCount": seekingField.text!, "experienceLevel": experienceField.text!, "game": game._id ]
         
+        var formDict: [String : String] = ["title": titleField.text!, "summary": textBox.text!, "seekingCount": seekingField.text!, "experienceLevel": experienceField.text!, "game": game._id ]
+
         networkingClient.createListing(formData: formDict) { response, error in
+            
             if let response = response {
+              
+                self.dismiss(animated: true) {
+                    self.mainVC?.addCreatedListing(listing: response)
+                }
                 print(response)
             } else if let error = error {
                 print(error)

@@ -103,7 +103,7 @@ extension NetworkingClient {
     }
     
     
-    func fetchListings(gameId: String, action: @escaping ([ListingResponse.Listing]?, Bool? ) -> Void) {
+    func fetchListings(gameId: String, action: @escaping ([Listing]?, Bool? ) -> Void) {
         let token = defaults.string(forKey: "accessToken")
 
         
@@ -119,7 +119,6 @@ extension NetworkingClient {
         
         AF.request("\(baseRestURL)/games/listings",method: .post, parameters: parameters, encoder: JSONParameterEncoder.default, headers: headers).responseDecodable(of: ListingResponse.self) { response in
             
-            print(response)
             guard let data = response.value else {
                 print("error in guard let")
                 return
@@ -165,7 +164,7 @@ extension NetworkingClient {
         }
     }
     
-    func createListing(formData: [String: String], action: @escaping (NewListing.Listing?, Bool? ) -> Void) {
+    func createListing(formData: [String: String], action: @escaping (Listing?, Bool? ) -> Void) {
         
         let token = defaults.string(forKey: "accessToken")
 
