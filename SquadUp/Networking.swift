@@ -164,4 +164,35 @@ extension NetworkingClient {
             
         }
     }
+    
+    func createListing(formData: [String: String], action: @escaping (NewListing.Listing?, Bool? ) -> Void) {
+        
+        let token = defaults.string(forKey: "accessToken")
+
+        
+        let headers: HTTPHeaders = [
+            "Accept": "application/json",
+            "Authorization": "Bearer \(token!)"
+        ]
+        
+        let parameters: [String: String] = formData
+        
+        
+        AF.request("\(baseRestURL)/games/listing/new",method: .post, parameters: parameters, encoder: JSONParameterEncoder.default, headers: headers).responseDecodable(of: NewListing.self) { response in
+            
+            print(response)
+            guard let data = response.value else {
+                print("error in guard let")
+                return
+            }
+            
+            if data.status == "OK" {
+                action(data.listing, nil)
+            } else {
+                action(nil, true)
+            }
+            
+        }
+    }
+    
 }

@@ -14,6 +14,10 @@ class CreateListingViewController: UIViewController {
     @IBOutlet weak var experienceField: UITextField!
     @IBOutlet weak var seekingField: UITextField!
     @IBOutlet weak var submitButton: UIButton!
+    @IBOutlet weak var errorMessage: UILabel!
+    
+    let networkingClient = NetworkingClient()
+    var game: GameResponse.Game!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,16 +39,19 @@ class CreateListingViewController: UIViewController {
     }
     
     @IBAction func submitListing(_ sender: UIButton) {
-        print("hello")
+        
+        var formDict: [String : String] = ["title": titleField.text!, "summary": textBox.text!, "seekingCount": seekingField.text!, "experienceLevel": experienceField.text!, "game": game._id ]
+        
+        networkingClient.createListing(formData: formDict) { response, error in
+            if let response = response {
+                print(response)
+            } else if let error = error {
+                print(error)
+            }
+        }
+        
     }
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
 
 }

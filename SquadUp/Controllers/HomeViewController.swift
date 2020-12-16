@@ -18,7 +18,6 @@ class HomeViewController: UIViewController {
     let reuseIdentifier = "customCell"
     
     
-    @IBOutlet weak var myLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var searchBar: UISearchBar!
     

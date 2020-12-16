@@ -23,6 +23,7 @@
 		C97A655E2574A6AA00A17151 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C97A655C2574A6AA00A17151 /* LaunchScreen.storyboard */; };
 		C97A65692574A6AB00A17151 /* SquadUpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97A65682574A6AB00A17151 /* SquadUpTests.swift */; };
 		C97A65742574A6AB00A17151 /* SquadUpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97A65732574A6AB00A17151 /* SquadUpUITests.swift */; };
+		C9A4D46925897D7F001C190E /* NewListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A4D46825897D7F001C190E /* NewListing.swift */; };
 		C9D752A22574B37C00630743 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D752A12574B37C00630743 /* LoginViewController.swift */; };
 		C9D752A7257585F700630743 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D752A6257585F700630743 /* Networking.swift */; };
 		C9D752AD2575954F00630743 /* LoginSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D752AC2575954F00630743 /* LoginSession.swift */; };
@@ -75,6 +76,7 @@
 		C97A656F2574A6AB00A17151 /* SquadUpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SquadUpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C97A65732574A6AB00A17151 /* SquadUpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquadUpUITests.swift; sourceTree = "<group>"; };
 		C97A65752574A6AB00A17151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9A4D46825897D7F001C190E /* NewListing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewListing.swift; sourceTree = "<group>"; };
 		C9D752A12574B37C00630743 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C9D752A6257585F700630743 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		C9D752AC2575954F00630743 /* LoginSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSession.swift; sourceTree = "<group>"; };
@@ -224,6 +226,7 @@
 				C9D752BC2578B69300630743 /* GameResponse.swift */,
 				C93AE530257EC1DC005A8667 /* ListingResponse.swift */,
 				C93AE5412581AE24005A8667 /* FavoriteResponse.swift */,
+				C9A4D46825897D7F001C190E /* NewListing.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -481,6 +484,7 @@
 				C9D752B32575DEF500630743 /* HomeViewController.swift in Sources */,
 				C97A65542574A6A700A17151 /* SceneDelegate.swift in Sources */,
 				C9D752BD2578B69400630743 /* GameResponse.swift in Sources */,
+				C9A4D46925897D7F001C190E /* NewListing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

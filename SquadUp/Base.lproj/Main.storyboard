@@ -562,7 +562,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="CJu-Nd-4TF">
-                                        <rect key="frame" x="12" y="12" width="390" height="948"/>
+                                        <rect key="frame" x="12" y="12" width="390" height="1034.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pfH-2d-Fmn">
                                                 <rect key="frame" x="0.0" y="0.0" width="43" height="35"/>
@@ -675,6 +675,12 @@
                                                     <constraint firstItem="cjQ-eK-Kwx" firstAttribute="top" secondItem="nsF-tc-z0r" secondAttribute="top" constant="16" id="ObT-VE-x3v"/>
                                                 </constraints>
                                             </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4jB-gg-2hM">
+                                                <rect key="frame" x="0.0" y="984.5" width="390" height="50"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="0rw-b4-3Ii" secondAttribute="trailing" id="0VF-kB-SpB"/>
@@ -682,6 +688,7 @@
                                             <constraint firstItem="Ir1-yU-Pvr" firstAttribute="leading" secondItem="CJu-Nd-4TF" secondAttribute="leading" id="3kx-kJ-6LQ"/>
                                             <constraint firstAttribute="trailing" secondItem="Ir1-yU-Pvr" secondAttribute="trailing" id="7fd-uB-Gjv"/>
                                             <constraint firstItem="aWF-0m-TDy" firstAttribute="centerX" secondItem="CJu-Nd-4TF" secondAttribute="centerX" id="BMe-IY-33z"/>
+                                            <constraint firstItem="4jB-gg-2hM" firstAttribute="centerX" secondItem="CJu-Nd-4TF" secondAttribute="centerX" id="azz-KI-M28"/>
                                             <constraint firstItem="Ir1-yU-Pvr" firstAttribute="top" secondItem="CJu-Nd-4TF" secondAttribute="top" constant="71.5" id="bwg-j9-ff6"/>
                                             <constraint firstItem="0rw-b4-3Ii" firstAttribute="leading" secondItem="CJu-Nd-4TF" secondAttribute="leading" id="mic-cw-Xob"/>
                                             <constraint firstItem="nsF-tc-z0r" firstAttribute="leading" secondItem="CJu-Nd-4TF" secondAttribute="leading" id="p9N-31-7da"/>
@@ -708,6 +715,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="errorMessage" destination="4jB-gg-2hM" id="HCa-os-GZz"/>
                         <outlet property="experienceField" destination="fAi-a4-HOo" id="RJk-dc-xqx"/>
                         <outlet property="seekingField" destination="nmo-KC-jbA" id="ag7-D7-Y4V"/>
                         <outlet property="submitButton" destination="cjQ-eK-Kwx" id="Hgq-So-CD3"/>

@@ -30,6 +30,10 @@ class GameDetailsViewController: UIViewController {
         performSegue(withIdentifier: "goToListingForm", sender: self)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destinationVC = segue.destination as! CreateListingViewController
+        destinationVC.game = self.selectedGame
+    }
     
     @IBAction func favoritePressed(_ sender: UIButton) {
         if let game = selectedGame {
